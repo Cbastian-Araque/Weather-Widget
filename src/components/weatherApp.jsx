@@ -20,7 +20,7 @@ export default function WeatherApp(){
   
   
 
-  async function loadInfo(city = 'london'){
+  async function loadInfo(city = 'Bogota'){
     try {
       const request = await fetch(
         `${import.meta.env.VITE_REACT_APP_URL}&key=${import.meta.env.VITE_REACT_APP_KEY}&q=${city}`

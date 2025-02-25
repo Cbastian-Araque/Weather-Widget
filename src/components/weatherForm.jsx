@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useState } from "react";
+import desing from './weatherApp.module.css';
 
 export default function WeatherForm({onChangeCity}){
   const [city, setCity] = useState('');
@@ -18,8 +19,9 @@ export default function WeatherForm({onChangeCity}){
   }
 
   return(
-    <form onSubmit={handleSubmit}>
-      <input type="text" onChange={onChange} />
+    <form onSubmit={handleSubmit} className={desing.formSearch}>
+      <h1>Search City</h1>
+      <input type="text" placeholder="London" onChange={onChange} />
     </form>
   )
 }

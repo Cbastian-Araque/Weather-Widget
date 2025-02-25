@@ -1,16 +1,18 @@
+import desing from './weatherApp.module.css';
+
 export default function WeatherMainInfo({weather}){
   return(
-    <div>
-      <div>{weather?.location.name}</div>
-      <div>{weather?.location.country}</div>
+    <div className={desing.containerInfo}>
+      <div className={desing.location}>{weather?.location.name}</div>
+      <div className={desing.location}>{`, ${weather?.location.country}`}</div>
 
-      <div>
-        <div>
-          <img src={`http://${weather?.current.condition.icon}`} alt="" width="128" />
+      <div className={desing.contentConditionInfo}>
+        <div className={desing.cntIcon}>
+          <img className={desing.iconCondition} src={`http://${weather?.current.condition.icon}`} alt="" width="80" />
         </div>
-        <div>
-            <div>{weather?.current.condition.text}</div>
-            <div>{weather?.current.temp_c}°</div>
+        <div className={desing.conditionVal}>
+          <div>{weather?.current.condition.text}</div>
+          <div>{weather?.current.temp_c}°</div>
         </div>
       </div>
       <iframe 
