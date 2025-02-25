@@ -1,8 +1,6 @@
-# React + Vite
+# Node version 22.14.0^
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Create env variables
+1. Copy file _.env.example_ and rename as _.env_
+1. Get the API Key from [Weather API Free](https://www.weatherapi.com/)
+1. Paste de API Key into .env file.
