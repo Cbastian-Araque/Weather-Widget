@@ -1,6 +1,6 @@
 import desing from './weatherApp.module.css';
 
-export default function WeatherMainInfo({weather}){
+export default function WeatherMainInfo({weather, time}){
   return(
     <div className={desing.containerInfo}>
       <div className={desing.location}>{weather?.location.name}</div>
@@ -13,6 +13,7 @@ export default function WeatherMainInfo({weather}){
         <div className={desing.conditionVal}>
           <div>{weather?.current.condition.text}</div>
           <div>{weather?.current.temp_c}°</div>
+          <div className={desing.time}>{time}</div>
         </div>
       </div>
       <iframe 
